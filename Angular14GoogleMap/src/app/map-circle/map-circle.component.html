@@ -1,0 +1,48 @@
+<!-- google-maps-demo.component.html -->
+<google-map height="700px"
+            width="1000px"
+            [center]="center"
+            [zoom]="zoom">
+
+<map-circle  *ngFor="let point of pointsOfInterest" [center]="point.circleCenter"
+                [radius]="point.radius"></map-circle>
+
+</google-map>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Latitude</th>
+        <th scope="col">Longitude</th>
+        <th scope="col">Radius</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let point of pointsOfInterestInit; let i = index">
+        <td>{{ point.id }}</td>
+        <td>{{ point.latitude }}</td>
+        <td>{{ point.longitude }}</td>
+        <td>{{ point.radius }}</td>
+        <td> <button (click)="deletePoint(i)">Delete</button>
+        <button (click)="goTo(point.latitude,point.longitude)" >Go to point of interest</button> </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <style>
+    table, th , td {
+      border: 1px solid grey;
+      border-collapse: collapse;
+      padding: 5px;
+    }
+    
+    table tr:nth-child(odd) {
+      background-color: #f1f1f1;
+    }
+    
+    table tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+    </style> 
