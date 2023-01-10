@@ -9,12 +9,17 @@ using System.Text;
 using System.Threading.Tasks;
 using static LanguageExt.Prelude;
 using Microsoft.AspNetCore.Mvc.Filters;
+using LanguageExt.Pipes;
+using Azure.Messaging.ServiceBus;
+using Newtonsoft.Json;
 
 namespace APIAPP.Repositories
 {
     public class PointOfInterestRepository : IPointOfInterestRepository
     {
         private readonly InfoContext dbContext;
+        ServiceBusClient client;
+        ServiceBusSender sender;
 
         public PointOfInterestRepository(InfoContext dbContext)
         {
@@ -52,6 +57,44 @@ namespace APIAPP.Repositories
                 }catch(Exception ex){
                     return false;
                 }
+        }
+
+        public async Task<bool> TryPostPointOfInterest(int id, int latitude, int longitude, int radius)
+        {
+            try
+            {   
+
+                var ToPostPOI = new PointsOfInterestDTO(id, radius, latitude, longitude, false);
+
+                var clientOptions = new ServiceBusClientOptions()
+                {
+                    TransportType = ServiceBusTransportType.AmqpWebSockets
+                };
+                client = new ServiceBusClient("Endpoint=sb://datcservicebusproject.servicebus.windows.net/;SharedAccessKeyName=Admin;SharedAccessKey=N8uTNibOhllgmetihPnl/KGDO9z4D8DcnH4NIxrsXzk=;EntityPath=datcprojectqueue", clientOptions);
+                sender = client.CreateSender("datcprojectqueue");
+
+                // create a batch 
+                using ServiceBusMessageBatch messageBatch = await sender.CreateMessageBatchAsync();
+
+                string jsonString = JsonConvert.SerializeObject(ToPostPOI);
+                messageBatch.TryAddMessage(new ServiceBusMessage(jsonString));
+
+                try
+                {
+                    await sender.SendMessagesAsync(messageBatch);
+                }
+                finally
+                {
+                    await sender.DisposeAsync();
+                    await client.DisposeAsync();
+                }
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
     }
 }

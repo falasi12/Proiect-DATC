@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIAPP", "APIAPP\APIAPP.csproj", "{E981402A-7CDE-485C-B5FF-868B6015F332}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIAPP", "APIAPP\APIAPP.csproj", "{E981402A-7CDE-485C-B5FF-868B6015F332}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundWorker", "BackgroundWorker\BackgroundWorker.csproj", "{89967043-8700-446C-8CB3-833B89684F20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{E981402A-7CDE-485C-B5FF-868B6015F332}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E981402A-7CDE-485C-B5FF-868B6015F332}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E981402A-7CDE-485C-B5FF-868B6015F332}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89967043-8700-446C-8CB3-833B89684F20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89967043-8700-446C-8CB3-833B89684F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89967043-8700-446C-8CB3-833B89684F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89967043-8700-446C-8CB3-833B89684F20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

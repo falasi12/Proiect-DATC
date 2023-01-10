@@ -1,6 +1,7 @@
 using APIAPP.Models;
 using APIAPP.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace APIAPP.Controllers
 {
@@ -45,5 +46,14 @@ namespace APIAPP.Controllers
         public async Task<ActionResult> TryGetAllPOI([FromServices] IPointOfInterestRepository pointOfInterestRepository) {
             return Ok(await pointOfInterestRepository.TryGetPointsOfInterest());
         }
+
+        [HttpPost]
+        [Route("PostPOI")]
+        [ProducesResponseType(typeof(List<PointsOfInterestDTO>), 200)]
+        public async Task<ActionResult> TryPostPointOfInterest([FromServices] IPointOfInterestRepository pointOfInterestRepository, int id, int radius, int latitude, int longitude)
+        {
+            return Ok(await pointOfInterestRepository.TryPostPointOfInterest(id,latitude,longitude,radius));
+        }
+
     }
 }
