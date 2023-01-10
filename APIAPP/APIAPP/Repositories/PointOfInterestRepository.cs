@@ -97,11 +97,10 @@ namespace APIAPP.Repositories
             }
         }
 
-        public async Task<bool> SimplePostPOI(double latitude, double longitude, double radius)
+        public async Task<bool> SimplePostPOI(PointsOfInterestDTO ToPostPOI)
         {
             try
             {
-                var ToPostPOI = new PointsOfInterestDTO(0, radius, latitude, longitude, false);
 
                 dbContext.Add(ToPostPOI);
 

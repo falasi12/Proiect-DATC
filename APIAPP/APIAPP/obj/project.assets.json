@@ -4775,24 +4775,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\eborz\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\mgfma\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Facultate\\DATC\\Repository\\Proiect-DATC\\APIAPP\\APIAPP\\APIAPP.csproj",
+      "projectUniqueName": "C:\\Users\\mgfma\\Desktop\\DATC\\Proiect\\APIAPP\\APIAPP\\APIAPP.csproj",
       "projectName": "APIAPP",
-      "projectPath": "D:\\Facultate\\DATC\\Repository\\Proiect-DATC\\APIAPP\\APIAPP\\APIAPP.csproj",
-      "packagesPath": "C:\\Users\\eborz\\.nuget\\packages\\",
-      "outputPath": "D:\\Facultate\\DATC\\Repository\\Proiect-DATC\\APIAPP\\APIAPP\\obj\\",
+      "projectPath": "C:\\Users\\mgfma\\Desktop\\DATC\\Proiect\\APIAPP\\APIAPP\\APIAPP.csproj",
+      "packagesPath": "C:\\Users\\mgfma\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mgfma\\Desktop\\DATC\\Proiect\\APIAPP\\APIAPP\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\eborz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\mgfma\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4800,7 +4795,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "D:\\Work\\ArmSoc.Repo1\\ArmSoc\\MotionBoard\\Bin\\SoCCore": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4863,7 +4857,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

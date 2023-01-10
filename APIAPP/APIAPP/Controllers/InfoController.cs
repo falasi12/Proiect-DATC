@@ -57,9 +57,9 @@ namespace APIAPP.Controllers
         [HttpPost]
         [Route("SimplePostPOI")]
         //[ProducesResponseType(typeof(List<PointsOfInterestDTO>), 200)]
-        public async Task<ActionResult> SimplePostPOI([FromServices] IPointOfInterestRepository pointOfInterestRepository,  double radius, double latitude, double longitude)
+        public async Task<ActionResult> SimplePostPOI([FromServices] IPointOfInterestRepository pointOfInterestRepository, [FromBody]PointsOfInterestDTO poi)
         {
-            return Ok(await pointOfInterestRepository.SimplePostPOI(latitude, longitude, radius));
+            return Ok(await pointOfInterestRepository.SimplePostPOI(poi));
         }
     }
 }
