@@ -43,7 +43,7 @@ namespace BackgroundWorker.Repositories
                                                 .ToList();
         }
 
-        public async Task<bool> TryDeletePointOfInterest(int id, int latitude, int longitude, int radius)
+        public async Task<bool> TryDeletePointOfInterest(int id, double latitude, double longitude, double radius)
         {
                 try
                 {
@@ -59,11 +59,11 @@ namespace BackgroundWorker.Repositories
                 }
         }
 
-        public async Task<bool> TryPostPointOfInterest(int id, int latitude, int longitude, int radius)
+        public async Task<bool> TryPostPointOfInterest( double latitude, double longitude, double radius)
         {
             try
             {
-                var ToPostPOI = new PointsOfInterestDTO(id, radius, latitude, longitude, false);
+                var ToPostPOI = new PointsOfInterestDTO(0, radius, latitude, longitude, false);
 
                 var clientOptions = new ServiceBusClientOptions()
                 {

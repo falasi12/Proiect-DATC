@@ -24,8 +24,6 @@ using var dbContext = new InfoContext(contextOptions);
 PointOfInterestRepository poiRepo = new PointOfInterestRepository(dbContext);
 double distanceBetween;
 
-
-
 // The Service Bus client types are safe to cache and use as a singleton for the lifetime
 // of the application, which is best practice when messages are being published or read
 // regularly.
@@ -97,7 +95,6 @@ double ToRadians(double deg)
 
     List<PointsOfInterestDTO> allPointsDTO = poiRepo.TryGetPointsOfInterest().Result;
 
-
     Console.WriteLine($"Received: {message}");
     bool isInRange = false;
 
@@ -110,38 +107,25 @@ double ToRadians(double deg)
             //Is in range 
             isInRange = true;
             Console.WriteLine("Ambrosia was reported near at: "+ entry.Latitude+ "; "+ entry.Longitude);
-            entry.Radius += 20;
+            entry.Radius += 10.0; //Extending radius with 10km
+
             dbContext.Update(entry);
             await dbContext.SaveChangesAsync();
-            await args.CompleteMessageAsync(args.Message);
+
             break;
         }
-        //else
-        //{
-        //    //NewPointOfInterest
-        //    Console.WriteLine("New Point of interest");
-        //    dbContext.Add(p);
-        //    await dbContext.SaveChangesAsync();
-        //    break;
-
-        //}
-
-        //dbContext.Update(toDeletePoint);
-        //await dbContext.SaveChangesAsync();
     }
 
     if (!isInRange)
     {
         Console.WriteLine("New Point of interest");
         //Saving into database
-       // dbContext.Database.ExecuteSqlRaw("SET IDENTITY_INSERT [dbo].[PointOfInterest] ON");
         dbContext.Add(p);
         await dbContext.SaveChangesAsync();
-        //dbContext.Database.ExecuteSqlRaw("SET IDENTITY_INSERT [dbo].[PointOfInterest] OFF");
-        await args.CompleteMessageAsync(args.Message);
+
     }
 
-    
+    await args.CompleteMessageAsync(args.Message);
 }
 
 // handle any errors when receiving messages

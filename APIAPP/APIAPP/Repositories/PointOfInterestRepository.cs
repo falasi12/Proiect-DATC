@@ -59,12 +59,12 @@ namespace APIAPP.Repositories
                 }
         }
 
-        public async Task<bool> TryPostPointOfInterest( int id,double latitude, double longitude, double radius)
+        public async Task<bool> TryPostPointOfInterest(double latitude, double longitude, double radius)
         {
             try
             {   
 
-                var ToPostPOI = new PointsOfInterestDTO(id, radius, latitude, longitude, false);
+                var ToPostPOI = new PointsOfInterestDTO(0, radius, latitude, longitude, false);
 
                 var clientOptions = new ServiceBusClientOptions()
                 {
