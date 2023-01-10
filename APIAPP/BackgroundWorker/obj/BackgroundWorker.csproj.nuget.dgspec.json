@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Facultate\\DATC\\ProiectDATC\\APIAPP\\BackgroundWorker\\BackgroundWorker.csproj": {}
+    "C:\\Users\\mgfma\\Desktop\\ProiectDatc\\APIAPP\\BackgroundWorker\\BackgroundWorker.csproj": {}
   },
   "projects": {
-    "D:\\Facultate\\DATC\\ProiectDATC\\APIAPP\\APIAPP\\APIAPP.csproj": {
+    "C:\\Users\\mgfma\\Desktop\\ProiectDatc\\APIAPP\\APIAPP\\APIAPP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Facultate\\DATC\\ProiectDATC\\APIAPP\\APIAPP\\APIAPP.csproj",
+        "projectUniqueName": "C:\\Users\\mgfma\\Desktop\\ProiectDatc\\APIAPP\\APIAPP\\APIAPP.csproj",
         "projectName": "APIAPP",
-        "projectPath": "D:\\Facultate\\DATC\\ProiectDATC\\APIAPP\\APIAPP\\APIAPP.csproj",
-        "packagesPath": "C:\\Users\\eborz\\.nuget\\packages\\",
-        "outputPath": "D:\\Facultate\\DATC\\ProiectDATC\\APIAPP\\APIAPP\\obj\\",
+        "projectPath": "C:\\Users\\mgfma\\Desktop\\ProiectDatc\\APIAPP\\APIAPP\\APIAPP.csproj",
+        "packagesPath": "C:\\Users\\mgfma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mgfma\\Desktop\\ProiectDatc\\APIAPP\\APIAPP\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\eborz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\mgfma\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\Work\\ArmSoc.Repo1\\ArmSoc\\MotionBoard\\Bin\\SoCCore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -89,25 +84,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Facultate\\DATC\\ProiectDATC\\APIAPP\\BackgroundWorker\\BackgroundWorker.csproj": {
+    "C:\\Users\\mgfma\\Desktop\\ProiectDatc\\APIAPP\\BackgroundWorker\\BackgroundWorker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Facultate\\DATC\\ProiectDATC\\APIAPP\\BackgroundWorker\\BackgroundWorker.csproj",
+        "projectUniqueName": "C:\\Users\\mgfma\\Desktop\\ProiectDatc\\APIAPP\\BackgroundWorker\\BackgroundWorker.csproj",
         "projectName": "BackgroundWorker",
-        "projectPath": "D:\\Facultate\\DATC\\ProiectDATC\\APIAPP\\BackgroundWorker\\BackgroundWorker.csproj",
-        "packagesPath": "C:\\Users\\eborz\\.nuget\\packages\\",
-        "outputPath": "D:\\Facultate\\DATC\\ProiectDATC\\APIAPP\\BackgroundWorker\\obj\\",
+        "projectPath": "C:\\Users\\mgfma\\Desktop\\ProiectDatc\\APIAPP\\BackgroundWorker\\BackgroundWorker.csproj",
+        "packagesPath": "C:\\Users\\mgfma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mgfma\\Desktop\\ProiectDatc\\APIAPP\\BackgroundWorker\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\eborz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\mgfma\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -115,15 +106,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\Work\\ArmSoc.Repo1\\ArmSoc\\MotionBoard\\Bin\\SoCCore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Facultate\\DATC\\ProiectDATC\\APIAPP\\APIAPP\\APIAPP.csproj": {
-                "projectPath": "D:\\Facultate\\DATC\\ProiectDATC\\APIAPP\\APIAPP\\APIAPP.csproj"
+              "C:\\Users\\mgfma\\Desktop\\ProiectDatc\\APIAPP\\APIAPP\\APIAPP.csproj": {
+                "projectPath": "C:\\Users\\mgfma\\Desktop\\ProiectDatc\\APIAPP\\APIAPP\\APIAPP.csproj"
               }
             }
           }
@@ -159,7 +149,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

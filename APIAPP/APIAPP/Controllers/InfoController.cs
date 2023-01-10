@@ -36,7 +36,7 @@ namespace APIAPP.Controllers
         [HttpGet]
         [Route("deletePointOfInterest")]
         [ProducesResponseType(typeof(bool), 200)]
-        public async Task<ActionResult> TryDeletePointOfInterest([FromServices] IPointOfInterestRepository pointOfInterestRepository, int id, int radius, int latitude, int longitude) {
+        public async Task<ActionResult> TryDeletePointOfInterest([FromServices] IPointOfInterestRepository pointOfInterestRepository, int id, double radius, double latitude, double longitude) {
             return Ok(await pointOfInterestRepository.TryDeletePointOfInterest(id, latitude, longitude, radius));
         }
 
@@ -50,10 +50,16 @@ namespace APIAPP.Controllers
         [HttpPost]
         [Route("PostPOI")]
         [ProducesResponseType(typeof(List<PointsOfInterestDTO>), 200)]
-        public async Task<ActionResult> TryPostPointOfInterest([FromServices] IPointOfInterestRepository pointOfInterestRepository, int id, int radius, int latitude, int longitude)
+        public async Task<ActionResult> TryPostPointOfInterest([FromServices] IPointOfInterestRepository pointOfInterestRepository,  int id, double radius, double latitude, double longitude)
         {
             return Ok(await pointOfInterestRepository.TryPostPointOfInterest(id,latitude,longitude,radius));
         }
-
+        [HttpPost]
+        [Route("SimplePostPOI")]
+        //[ProducesResponseType(typeof(List<PointsOfInterestDTO>), 200)]
+        public async Task<ActionResult> SimplePostPOI([FromServices] IPointOfInterestRepository pointOfInterestRepository,  double radius, double latitude, double longitude)
+        {
+            return Ok(await pointOfInterestRepository.SimplePostPOI(latitude, longitude, radius));
+        }
     }
 }

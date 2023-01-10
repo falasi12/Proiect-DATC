@@ -43,7 +43,7 @@ namespace APIAPP.Repositories
                                                 .ToList();
         }
 
-        public async Task<bool> TryDeletePointOfInterest(int id, int latitude, int longitude, int radius)
+        public async Task<bool> TryDeletePointOfInterest(int id, double latitude, double longitude, double radius)
         {
                 try
                 {
@@ -59,7 +59,7 @@ namespace APIAPP.Repositories
                 }
         }
 
-        public async Task<bool> TryPostPointOfInterest(int id, int latitude, int longitude, int radius)
+        public async Task<bool> TryPostPointOfInterest( int id,double latitude, double longitude, double radius)
         {
             try
             {   
@@ -88,6 +88,24 @@ namespace APIAPP.Repositories
                     await sender.DisposeAsync();
                     await client.DisposeAsync();
                 }
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public async Task<bool> SimplePostPOI(double latitude, double longitude, double radius)
+        {
+            try
+            {
+                var ToPostPOI = new PointsOfInterestDTO(0, radius, latitude, longitude, false);
+
+                dbContext.Add(ToPostPOI);
+
+                await dbContext.SaveChangesAsync();
 
                 return true;
             }
