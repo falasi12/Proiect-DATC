@@ -79,7 +79,7 @@ double GetDistance(double lat1, double lon1, double lat2, double lon2)
 
     var c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1 - a));
     var d = R * c; // Distance in km
-    return d;
+    return d*1000;
 }
 
 double ToRadians(double deg)
@@ -107,7 +107,7 @@ double ToRadians(double deg)
             //Is in range 
             isInRange = true;
             Console.WriteLine("Ambrosia was reported near at: "+ entry.Latitude+ "; "+ entry.Longitude);
-            entry.Radius += 10.0; //Extending radius with 10km
+            entry.Radius += 50.0; //Extending radius with 10km
 
             dbContext.Update(entry);
             await dbContext.SaveChangesAsync();
