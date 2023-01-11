@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2ywU7vpiohZp9BaefQYf14X0w4EMDsweXHGjHTFbzQIU0becgQF1mTlIH0pGqalKnZYjBkz4FTlb6u0FqIIICw==",
+  "dgSpecHash": "jcFr5FvYSVafSMDqY+EtXAz/D2KR3qHWw13RaKXx7JJuS7rVCa032AQAAzMFd8dGJHsyOL19Zt9tXJ+WeZ7nNQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\mgfma\\Desktop\\DATC\\Proiect\\APIAPP\\APIAPP\\APIAPP.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\mgfma\\.nuget\\packages\\azure.core.amqp\\1.2.0\\azure.core.amqp.1.2.0.nupkg.sha512",
     "C:\\Users\\mgfma\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\mgfma\\.nuget\\packages\\azure.messaging.servicebus\\7.11.1\\azure.messaging.servicebus.7.11.1.nupkg.sha512",
+    "C:\\Users\\mgfma\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\mgfma\\.nuget\\packages\\languageext.core\\4.4.0\\languageext.core.4.4.0.nupkg.sha512",
     "C:\\Users\\mgfma\\.nuget\\packages\\microsoft.azure.amqp\\2.5.12\\microsoft.azure.amqp.2.5.12.nupkg.sha512",
     "C:\\Users\\mgfma\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
@@ -17,8 +18,10 @@
     "C:\\Users\\mgfma\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.1\\microsoft.entityframeworkcore.7.0.1.nupkg.sha512",
     "C:\\Users\\mgfma\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.1\\microsoft.entityframeworkcore.abstractions.7.0.1.nupkg.sha512",
     "C:\\Users\\mgfma\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.1\\microsoft.entityframeworkcore.analyzers.7.0.1.nupkg.sha512",
+    "C:\\Users\\mgfma\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.5\\microsoft.entityframeworkcore.design.6.0.5.nupkg.sha512",
     "C:\\Users\\mgfma\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.1\\microsoft.entityframeworkcore.relational.7.0.1.nupkg.sha512",
     "C:\\Users\\mgfma\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.1\\microsoft.entityframeworkcore.sqlserver.7.0.1.nupkg.sha512",
+    "C:\\Users\\mgfma\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.5\\microsoft.entityframeworkcore.tools.6.0.5.nupkg.sha512",
     "C:\\Users\\mgfma\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\mgfma\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\mgfma\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",

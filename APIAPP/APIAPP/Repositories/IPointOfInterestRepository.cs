@@ -8,7 +8,7 @@ namespace APIAPP.Repositories
     {
         Task<List<PointsOfInterestDTO>> TryGetPointsOfInterest();
         Task<bool> TryDeletePointOfInterest(int id, double latitude, double longitude, double radius);
-        Task<bool> TryPostPointOfInterest(double latitude, double longitude, double radius);
+        Task<bool> TryPostPointOfInterest(PointsOfInterestDTO poi);
         Task<bool> SimplePostPOI(PointsOfInterestDTO poi);
 
 
