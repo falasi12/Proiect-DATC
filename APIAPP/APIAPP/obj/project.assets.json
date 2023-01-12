@@ -4639,11 +4639,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\oprea\\Desktop\\DATC\\API\\APIAPP\\APIAPP\\APIAPP.csproj",
+      "projectUniqueName": "C:\\Users\\oprea\\Desktop\\FINAL\\APIAPP\\APIAPP\\APIAPP.csproj",
       "projectName": "APIAPP",
-      "projectPath": "C:\\Users\\oprea\\Desktop\\DATC\\API\\APIAPP\\APIAPP\\APIAPP.csproj",
+      "projectPath": "C:\\Users\\oprea\\Desktop\\FINAL\\APIAPP\\APIAPP\\APIAPP.csproj",
       "packagesPath": "C:\\Users\\oprea\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\oprea\\Desktop\\DATC\\API\\APIAPP\\APIAPP\\obj\\",
+      "outputPath": "C:\\Users\\oprea\\Desktop\\FINAL\\APIAPP\\APIAPP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\oprea\\AppData\\Roaming\\NuGet\\NuGet.Config",

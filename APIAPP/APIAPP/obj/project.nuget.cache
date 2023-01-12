@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oZjufWyNSuFWyXcUM7UJOoCGZXUQBXw7JR56qgiD0E6SrA7BiwXXVMVi0bMf3zD5fdv5UO4ccjkIDHDfwbl6Sg==",
+  "dgSpecHash": "dkoMkX+ue1KCwHI3ZGhlo458/WNAmI8x946iYHiyUedlk7H6vCLn5pqnB19Mkcz10E2cVRcO7Z6OLFBeuuGv0w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\oprea\\Desktop\\DATC\\API\\APIAPP\\APIAPP\\APIAPP.csproj",
+  "projectFilePath": "C:\\Users\\oprea\\Desktop\\FINAL\\APIAPP\\APIAPP\\APIAPP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\oprea\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\oprea\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

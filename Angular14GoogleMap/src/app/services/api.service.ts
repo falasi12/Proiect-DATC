@@ -10,7 +10,7 @@ import { pointOfInterestDTO } from '../models/pointOfInterestDTO';
 })
 
 export class ApiService{
-    private baseApiUrl = `https://apiambrosiaproject.azurewebsites.net/Info/`;
+    private baseApiUrl = `https://apiambrosiaproject.azurewebsites.net/Info`;
 
     public getPointsOfInterest(){
         return this._http.get(`${this.baseApiUrl}/AllPOI`) as Observable<pointOfInterestDTO[]>;
